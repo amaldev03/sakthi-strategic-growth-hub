@@ -95,10 +95,10 @@ const MarketingStrategies = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Marketing Consultation Card */}
               <AnimatedSection delay={0.1}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group h-full">
                   <div className="absolute inset-0 bg-gradient-to-br from-strategic-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex flex-col flex-grow">
                     <div className="relative mb-8">
                       <div className="h-12 w-12 bg-strategic-green/10 rounded-xl flex items-center justify-center mb-6">
                         <Calendar className="h-6 w-6 text-strategic-green" />
@@ -183,10 +183,10 @@ const MarketingStrategies = () => {
 
               {/* Marketing Consultant Card */}
               <AnimatedSection delay={0.2}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group h-full">
                   <div className="absolute inset-0 bg-gradient-to-br from-strategic-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex flex-col flex-grow">
                     <div className="relative mb-8">
                       <div className="h-12 w-12 bg-strategic-green/10 rounded-xl flex items-center justify-center mb-6">
                         <Users className="h-6 w-6 text-strategic-green" />
@@ -282,10 +282,10 @@ const MarketingStrategies = () => {
 
               {/* Marketing Partnership Card */}
               <AnimatedSection delay={0.3}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col relative group h-full">
                   <div className="absolute inset-0 bg-gradient-to-br from-strategic-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl pointer-events-none" />
 
-                  <div className="relative z-10">
+                  <div className="relative z-10 flex flex-col flex-grow">
                     <div className="relative mb-8">
                       <div className="h-12 w-12 bg-strategic-green/10 rounded-xl flex items-center justify-center mb-6">
                         <Sparkles className="h-6 w-6 text-strategic-green" />
@@ -450,28 +450,6 @@ const MarketingStrategies = () => {
                   </span>
                 </li>
               </ul>
-            </div>
-          </div>
-        </section>
-      </AnimatedSection>
-
-      {/* CTA Section */}
-      <AnimatedSection delay={0.5}>
-        <section className="bg-white py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold text-gray-900 mb-4">
-                Ready to Transform Your Marketing?
-              </h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Book a free discovery call to discuss your needs and see how we
-                can help.
-              </p>
-              <CTAButton
-                text="Schedule Your Free Call"
-                href="https://calendly.com/strategicsakthi"
-                external={true}
-              />
             </div>
           </div>
         </section>

@@ -401,9 +401,9 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {services.map((service, index) => (
                 <AnimatedSection delay={0.1 * (index + 1)} key={index}>
-                  <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-strategic-green/20">
+                  <div className="group relative overflow-hidden rounded-2xl bg-white p-6 shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-strategic-green/20 h-full flex flex-col">
                     <div className="absolute inset-0 bg-gradient-to-br from-strategic-green/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="relative z-10">
+                    <div className="relative z-10 flex flex-col h-full">
                       <Link to={service.path} className="block">
                         <h3 className="text-xl font-semibold mb-3 text-gray-800 group-hover:text-strategic-green transition-colors duration-300">
                           {service.name}
@@ -413,7 +413,7 @@ const Index = () => {
                         </p>
                       </Link>
                       {service.subServices && (
-                        <div className="space-y-2 pl-4 border-l-2 border-gray-100">
+                        <div className="space-y-2 pl-4 border-l-2 border-gray-100 flex-grow">
                           {service.subServices.map((subService, subIndex) => (
                             <div key={subIndex} className="text-sm">
                               <p className="font-medium text-gray-700">

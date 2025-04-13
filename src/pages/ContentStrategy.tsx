@@ -66,7 +66,7 @@ const ContentStrategy = () => {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {/* Content Strategy Card */}
               <AnimatedSection delay={0.1}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-3 text-gray-900">
                       Content Strategy
@@ -77,54 +77,62 @@ const ContentStrategy = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gray-50 p-6 rounded-xl mb-6">
-                    <h3 className="text-xl font-bold mb-4 text-gray-900">
-                      What's Included:
-                    </h3>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <LayoutTemplate
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">Content Calendar</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Users
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Persona-Based Scripting
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Video
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Full Video Editing
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <TrendingUp
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">Trend-Based Hooks</span>
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">CTA Optimization</span>
-                      </li>
-                    </ul>
-                    <p className="mt-4 text-gray-600 italic">
-                      Note: Does not include Videography
-                    </p>
+                  <div className="flex-grow">
+                    <div className="bg-gray-50 p-6 rounded-xl mb-6">
+                      <h3 className="text-xl font-bold mb-4 text-gray-900">
+                        What's Included:
+                      </h3>
+                      <ul className="space-y-2">
+                        <li className="flex items-start">
+                          <LayoutTemplate
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Content Calendar
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Users
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Persona-Based Scripting
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Video
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Full Video Editing
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <TrendingUp
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Trend-Based Hooks
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Sparkles
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            CTA Optimization
+                          </span>
+                        </li>
+                      </ul>
+                      <p className="mt-4 text-gray-600 italic">
+                        Note: Does not include Videography
+                      </p>
+                    </div>
                   </div>
 
                   <div className="mt-auto">
@@ -177,7 +185,7 @@ const ContentStrategy = () => {
 
               {/* Scripting Card */}
               <AnimatedSection delay={0.2}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-3 text-gray-900">
                       Scripting
@@ -190,48 +198,50 @@ const ContentStrategy = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gray-50 p-6 rounded-xl mb-6">
-                    <h3 className="text-xl font-bold mb-4 text-gray-900">
-                      What's Included:
-                    </h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <Play
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Short-form scripts under 1 minute
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Users
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Crafted using persona psychology
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <TrendingUp
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Trend-based content optimization
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Sparkles
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Perfect for reels and shorts
-                        </span>
-                      </li>
-                    </ul>
+                  <div className="flex-grow">
+                    <div className="bg-gray-50 p-6 rounded-xl mb-6">
+                      <h3 className="text-xl font-bold mb-4 text-gray-900">
+                        What's Included:
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <Play
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Short-form scripts under 1 minute
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Users
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Crafted using persona psychology
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <TrendingUp
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Trend-based content optimization
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Sparkles
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Perfect for reels and shorts
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className="mt-auto">
@@ -255,7 +265,7 @@ const ContentStrategy = () => {
 
               {/* Video Editing Card */}
               <AnimatedSection delay={0.3}>
-                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col">
+                <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 flex flex-col h-full">
                   <div className="mb-8">
                     <h2 className="text-2xl font-bold mb-3 text-gray-900">
                       Video Editing
@@ -267,48 +277,50 @@ const ContentStrategy = () => {
                     </p>
                   </div>
 
-                  <div className="bg-gray-50 p-6 rounded-xl mb-6">
-                    <h3 className="text-xl font-bold mb-4 text-gray-900">
-                      What's Included:
-                    </h3>
-                    <ul className="space-y-3">
-                      <li className="flex items-start">
-                        <Sparkles
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Professional transitions
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Type
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Engaging subtitles
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Music
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Trending music integration
-                        </span>
-                      </li>
-                      <li className="flex items-start">
-                        <Laptop
-                          size={20}
-                          className="text-strategic-green mr-2 mt-1"
-                        />
-                        <span className="text-gray-600">
-                          Platform-optimized formats
-                        </span>
-                      </li>
-                    </ul>
+                  <div className="flex-grow">
+                    <div className="bg-gray-50 p-6 rounded-xl mb-6">
+                      <h3 className="text-xl font-bold mb-4 text-gray-900">
+                        What's Included:
+                      </h3>
+                      <ul className="space-y-3">
+                        <li className="flex items-start">
+                          <Sparkles
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Professional transitions
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Type
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Engaging subtitles
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Music
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Trending music integration
+                          </span>
+                        </li>
+                        <li className="flex items-start">
+                          <Laptop
+                            size={20}
+                            className="text-strategic-green mr-2 mt-1"
+                          />
+                          <span className="text-gray-600">
+                            Platform-optimized formats
+                          </span>
+                        </li>
+                      </ul>
+                    </div>
                   </div>
 
                   <div className="mt-auto">
@@ -362,26 +374,6 @@ const ContentStrategy = () => {
                 </AnimatedSection>
               ))}
             </div>
-          </div>
-        </section>
-      </AnimatedSection>
-
-      {/* CTA Section */}
-      <AnimatedSection delay={0.6}>
-        <section className="bg-gray-50 py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Ready to Create Content That Converts?
-            </h2>
-            <p className="text-lg text-gray-600 mb-8">
-              Book a discovery call to discuss your content needs and see how we
-              can help.
-            </p>
-            <CTAButton
-              text="Schedule Your Free Call"
-              href="https://calendly.com/strategicsakthi"
-              external={true}
-            />
           </div>
         </section>
       </AnimatedSection>
