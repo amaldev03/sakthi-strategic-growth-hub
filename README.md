@@ -1,73 +1,57 @@
-# Welcome to your Lovable project
+# Sakthi Strategic Growth Hub
 
-## Project info
+This is a modern web application built with React and Vite.
 
-**URL**: https://lovable.dev/projects/270a0d63-5aa4-4f32-b7d0-b9d178c5690f
+## Getting Started
 
-## How can I edit this code?
+### Prerequisites
 
-There are several ways of editing your application.
+- Node.js (v18 or higher)
+- npm or yarn
 
-**Use Lovable**
+### Installation
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/270a0d63-5aa4-4f32-b7d0-b9d178c5690f) and start prompting.
+1. Clone the repository
+2. Install dependencies:
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm install
+# or
+yarn install
 ```
 
-**Edit a file directly in GitHub**
+### Development
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+To start the development server:
 
-**Use GitHub Codespaces**
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Building for Production
 
-## What technologies are used for this project?
+To build the application for production:
 
-This project is built with:
+```bash
+npm run build
+# or
+yarn build
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Features
 
-## How can I deploy this project?
+- Modern React application
+- Vite for fast development and building
+- Tailwind CSS for styling
+- Radix UI components
+- Responsive design
 
-Simply open [Lovable](https://lovable.dev/projects/270a0d63-5aa4-4f32-b7d0-b9d178c5690f) and click on Share -> Publish.
+## Contributing
 
-## Can I connect a custom domain to my Lovable project?
+Feel free to submit issues and enhancement requests.
 
-Yes it is!
+## License
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project is licensed under the MIT License.

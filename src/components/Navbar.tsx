@@ -1,10 +1,15 @@
-
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
+
+  // Scroll to top when route changes
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
   const menuItems = [
     { title: "Home", path: "/" },
@@ -15,6 +20,13 @@ const Navbar = () => {
     { title: "About", path: "/about" },
   ];
 
+  const isActive = (path: string) => {
+    if (path === "/" && location.pathname !== "/") {
+      return false;
+    }
+    return location.pathname === path;
+  };
+
   return (
     <nav className="bg-white shadow-md sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,14 +36,18 @@ const Navbar = () => {
               <span className="text-strategic-green">Strategic</span> Sakthi
             </Link>
           </div>
-          
+
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-4">
             {menuItems.map((item) => (
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-gray-700 hover:text-strategic-green px-3 py-2 rounded-md text-sm font-medium transition-colors"
+                className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                  isActive(item.path)
+                    ? "text-strategic-green bg-strategic-green/10"
+                    : "text-gray-700 hover:text-strategic-green"
+                }`}
               >
                 {item.title}
               </Link>
@@ -45,7 +61,7 @@ const Navbar = () => {
               Book a Call
             </Link>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="md:hidden flex items-center">
             <button
@@ -66,7 +82,11 @@ const Navbar = () => {
               <Link
                 key={item.path}
                 to={item.path}
-                className="text-gray-700 hover:text-strategic-green block px-3 py-2 rounded-md text-base font-medium"
+                className={`block px-3 py-2 rounded-md text-base font-medium ${
+                  isActive(item.path)
+                    ? "text-strategic-green bg-strategic-green/10"
+                    : "text-gray-700 hover:text-strategic-green"
+                }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {item.title}
