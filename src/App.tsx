@@ -18,7 +18,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
-      <BrowserRouter>
+      <BrowserRouter basename="/sakthi-strategic-growth-hub">
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/market-research" element={<MarketResearch />} />
