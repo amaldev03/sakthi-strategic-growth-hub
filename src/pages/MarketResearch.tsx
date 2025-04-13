@@ -161,32 +161,36 @@ const MarketResearch = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {previousWorks.map((work, index) => (
                 <AnimatedSection delay={0.1 * (index + 1)} key={index}>
-                  <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+                  <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 h-full flex flex-col">
                     <div className="mb-6">
                       <Image
                         src={getImagePath(
                           `previous_works/${index + 1}.${work.type}`
                         )}
                         alt="Market Research Analysis"
-                        className="w-full h-64 rounded-lg"
+                        className="w-full h-64 rounded-lg object-cover"
                         placeholderClassName="w-full h-64"
                       />
                     </div>
-                    <h3 className="text-xl font-bold mb-2 text-gray-900">
-                      {work.name}
-                    </h3>
-                    <p className="mb-4 text-gray-600">{work.description}</p>
-                    {work.link && (
-                      <a
-                        href={work.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-strategic-green hover:underline flex items-center"
-                      >
-                        View Research{" "}
-                        <ExternalLink size={16} className="ml-1" />
-                      </a>
-                    )}
+                    <div className="flex flex-col flex-grow">
+                      <h3 className="text-xl font-bold mb-2 text-gray-900">
+                        {work.name}
+                      </h3>
+                      <p className="mb-4 text-gray-600 flex-grow">
+                        {work.description}
+                      </p>
+                      {work.link && (
+                        <a
+                          href={work.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-strategic-green hover:underline flex items-center mt-auto"
+                        >
+                          View Research{" "}
+                          <ExternalLink size={16} className="ml-1" />
+                        </a>
+                      )}
+                    </div>
                   </div>
                 </AnimatedSection>
               ))}
