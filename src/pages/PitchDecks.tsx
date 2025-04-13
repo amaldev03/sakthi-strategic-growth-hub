@@ -22,6 +22,7 @@ import {
   CardContent,
   CardFooter,
 } from "@/components/ui/card";
+import { getImagePath } from "../utils/imagePath";
 
 const PitchDecks = () => {
   const businessDeckFeatures = [
@@ -178,6 +179,38 @@ const PitchDecks = () => {
           </AnimatedSection>
         </div>
       </section>
+
+      {/* Portfolio Section */}
+      <AnimatedSection delay={0.6}>
+        <section className="bg-gray-50 py-16">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <SectionHeader
+              title="Sample Works"
+              subtitle="A glimpse of our pitch deck designs"
+            />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[1, 2, 3].map((index) => (
+                <AnimatedSection delay={0.1 * index} key={index}>
+                  <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
+                    <div className="relative pt-[56.25%] w-full">
+                      {" "}
+                      {/* 16:9 aspect ratio */}
+                      <div className="absolute inset-0 flex items-center justify-center p-4">
+                        <Image
+                          src={getImagePath(`/pitch_decks/${index}.png`)}
+                          alt={`Pitch Deck Sample ${index}`}
+                          className="w-full h-full object-contain"
+                          placeholderClassName="w-full h-full"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </AnimatedSection>
+              ))}
+            </div>
+          </div>
+        </section>
+      </AnimatedSection>
 
       <Footer />
     </div>

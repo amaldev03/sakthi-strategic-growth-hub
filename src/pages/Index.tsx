@@ -6,6 +6,7 @@ import CTAButton from "@/components/CTAButton";
 import Image from "@/components/Image";
 import { useState, useEffect, useRef } from "react";
 import { AnimatedSection } from "@/components/AnimatedLayout";
+import { getImagePath } from "../utils/imagePath";
 
 const Index = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -185,7 +186,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="flex justify-center">
                 <Image
-                  src="/strategic-sakthi.jpg"
+                  src={getImagePath("/strategic-sakthi.jpg")}
                   alt="Strategic Sakthi"
                   className="w-full max-w-md h-96 object-cover rounded-lg"
                   placeholderClassName="w-full max-w-md h-96"

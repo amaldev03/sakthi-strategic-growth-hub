@@ -20,6 +20,7 @@ import {
   Music,
   Laptop,
 } from "lucide-react";
+import { getImagePath } from "../utils/imagePath";
 
 const ContentStrategy = () => {
   const contentStrategyFeatures = [
@@ -350,7 +351,7 @@ const ContentStrategy = () => {
                       {/* Square aspect ratio */}
                       <div className="absolute inset-0 flex items-center justify-center p-6">
                         <Image
-                          src={`/portfolios/${sample}.png`}
+                          src={getImagePath(`/portfolios/${sample}.png`)}
                           alt={`Portfolio Sample ${sample}`}
                           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                           placeholderClassName="w-full h-full"

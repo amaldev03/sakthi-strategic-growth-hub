@@ -5,6 +5,7 @@ import CTAButton from "@/components/CTAButton";
 import Image from "@/components/Image";
 import { ExternalLink, CheckCircle, Users, FileCheck } from "lucide-react";
 import { AnimatedSection } from "@/components/AnimatedLayout";
+import { getImagePath } from "../utils/imagePath";
 
 const MarketResearch = () => {
   const problemStatements = [
@@ -163,7 +164,9 @@ const MarketResearch = () => {
                   <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                     <div className="mb-6">
                       <Image
-                        src={`previous_works/${index + 1}.${work.type}`}
+                        src={getImagePath(
+                          `/previous_works/${index + 1}.${work.type}`
+                        )}
                         alt="Market Research Analysis"
                         className="w-full h-64 rounded-lg"
                         placeholderClassName="w-full h-64"
