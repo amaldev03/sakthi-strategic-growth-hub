@@ -74,10 +74,14 @@ const About = () => {
             </p>
           </div>
           <div className="flex justify-center">
-            <ImagePlaceholder 
-              alt="Sakthi - Strategic Growth Partner" 
-              className="w-full max-w-md h-96 rounded-lg shadow-md" 
-            />
+            <div className="card w-full max-w-md">
+              <div className="card-content">
+                <ImagePlaceholder 
+                  alt="Sakthi - Strategic Growth Partner" 
+                  className="w-full h-96 rounded-lg" 
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -90,7 +94,7 @@ const About = () => {
             {careerTimeline.map((item, index) => (
               <div key={index} className="grid grid-cols-1 md:grid-cols-8 gap-4">
                 <div className="md:col-span-2 flex md:justify-end">
-                  <div className="bg-white p-4 rounded-lg shadow-sm w-full text-center">
+                  <div className="timeline-card w-full text-center">
                     <div className="mb-2">
                       <ImagePlaceholder 
                         alt={item.organization} 
@@ -106,7 +110,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="md:col-span-5">
-                  <div className="bg-white p-6 rounded-lg shadow-sm">
+                  <div className="timeline-card">
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <p>{item.organization}</p>
                   </div>
@@ -120,19 +124,19 @@ const About = () => {
       {/* Mission & Vision */}
       <section className="section section-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
+          <div className="highlight-card">
             <h2 className="text-2xl font-bold mb-6">MISSION: LIGHT UP TAMIL NADU</h2>
             <div className="mb-6">
               <ImagePlaceholder 
                 alt="Mission - Light Up Tamil Nadu" 
-                className="w-full h-40 shadow-sm" 
+                className="w-full h-40 shadow-sm rounded-lg" 
               />
             </div>
             <p className="text-lg">
               Taking 5 Businesses from Tamil Nadu to the global scale
             </p>
           </div>
-          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
+          <div className="highlight-card">
             <h2 className="text-2xl font-bold mb-6">VISION</h2>
             <p className="text-lg">
               Being the bridge between Unorganized businesses and Undirected Youth to unlock potential of both in India

@@ -94,11 +94,11 @@ const Index = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-strategic-light p-6 rounded-lg shadow-md card-hover">
+          <div className="feature-card">
             <h3 className="text-xl font-bold mb-3">ROI-Driven Strategy</h3>
             <p>We craft every plan with a clear RoI focus, timeline, and market insight.</p>
           </div>
-          <div className="bg-strategic-light p-6 rounded-lg shadow-md card-hover">
+          <div className="feature-card">
             <h3 className="text-xl font-bold mb-3">Gen Z Market Expertise</h3>
             <p>
               Gen Z is different. They think, consume, and buy differently — and we get them.
@@ -107,7 +107,7 @@ const Index = () => {
               storytelling—your message lands right where it matters.
             </p>
           </div>
-          <div className="bg-strategic-light p-6 rounded-lg shadow-md card-hover">
+          <div className="feature-card">
             <h3 className="text-xl font-bold mb-3">Verified Vendor Network (Across Tamil Nadu)</h3>
             <p>
               No more wasting time chasing freelancers or figuring out whom to trust.
@@ -142,7 +142,7 @@ const Index = () => {
         <h3 className="text-2xl font-bold text-center mb-10">Previous Brands Worked</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {brands.map((brand, index) => (
-            <div key={index} className="bg-strategic-dark border border-gray-700 p-4 rounded-lg text-center">
+            <div key={index} className="brand-card bg-strategic-dark border border-gray-700 text-center">
               <ImagePlaceholder alt={brand.name} className="h-24 mb-3" />
               <p className="font-medium">{brand.name}</p>
             </div>
@@ -155,7 +155,7 @@ const Index = () => {
       
       {/* CTA Section */}
       <section className="section bg-strategic-light">
-        <div className="text-center">
+        <div className="cta-card max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8">Ready to Take the Next Step?</h2>
           <div className="flex flex-wrap justify-center gap-4">
             <CTAButton text="Explore Services" href="/market-research" />
@@ -173,7 +173,7 @@ const Index = () => {
             <Link 
               key={index} 
               to={service.path}
-              className="p-4 border border-gray-200 rounded-lg hover:border-strategic-green hover:shadow-md transition-all"
+              className="service-card"
             >
               <p className="font-medium">{service.name}</p>
             </Link>
@@ -196,16 +196,18 @@ const Index = () => {
         <SectionHeader title="Industries We Work In" />
         <div className="max-w-3xl mx-auto flex flex-wrap justify-center gap-4 mb-12">
           {["Consumer Goods", "Education", "Healthcare", "Real Estate", "Startups"].map((industry, index) => (
-            <span key={index} className="px-4 py-2 bg-white rounded-full shadow-sm">
+            <span key={index} className="px-4 py-2 bg-white rounded-full shadow-sm border border-gray-200">
               {industry}
             </span>
           ))}
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {industries.map((industry, index) => (
-            <div key={index} className="bg-white p-4 rounded-lg shadow-md card-hover">
-              <ImagePlaceholder alt={industry.name} className="h-40 mb-4" />
-              <h3 className="text-xl font-bold text-center">{industry.name}</h3>
+            <div key={index} className="card">
+              <div className="card-content">
+                <ImagePlaceholder alt={industry.name} className="h-40 mb-4" />
+                <h3 className="text-xl font-bold text-center">{industry.name}</h3>
+              </div>
             </div>
           ))}
         </div>

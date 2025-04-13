@@ -46,7 +46,7 @@ const PitchDecks = () => {
             <p className="text-lg mb-6">
               Whether it's a sales pitch, brand profile, or partnership deck—we build presentations that get results.
             </p>
-            <div className="bg-gray-100 p-6 rounded-lg mb-6 shadow-sm">
+            <div className="highlight-card mb-6">
               <p className="text-2xl font-bold mb-2">₹500 per slide</p>
               <p className="text-gray-600">(Customizable decks for any business stage)</p>
             </div>
@@ -66,10 +66,14 @@ const PitchDecks = () => {
             />
           </div>
           <div className="flex justify-center">
-            <ImagePlaceholder 
-              alt="Business Pitch Deck Sample" 
-              className="w-full max-w-md h-80 shadow-md rounded-lg" 
-            />
+            <div className="card w-full max-w-md">
+              <div className="card-content">
+                <ImagePlaceholder 
+                  alt="Business Pitch Deck Sample" 
+                  className="w-full h-80 rounded-lg" 
+                />
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -78,7 +82,7 @@ const PitchDecks = () => {
       <section className="section section-gray">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="order-2 lg:order-1 flex justify-center">
-            <Card className="w-full max-w-md shadow-md">
+            <Card className="w-full max-w-md shadow-sm border border-gray-200 hover:shadow-md transition-all duration-300">
               <CardHeader>
                 <ImagePlaceholder 
                   alt="Investor Pitch Deck Sample" 
@@ -110,7 +114,7 @@ const PitchDecks = () => {
               Crafted specifically for startups and founders seeking funding—designed to clearly present 
               value, traction, and potential.
             </p>
-            <div className="bg-white p-6 rounded-lg shadow-sm mb-6">
+            <div className="highlight-card mb-6">
               <p className="text-2xl font-bold mb-2">Starts at ₹25,000</p>
               <p className="text-gray-600">(Custom pricing based on investor stage and detail required)</p>
             </div>
@@ -134,15 +138,17 @@ const PitchDecks = () => {
       
       {/* Portfolio Link */}
       <section className="section section-white text-center">
-        <h2 className="text-2xl font-bold mb-6">Portfolio:</h2>
-        <a 
-          href="https://drive.google.com/drive/folders/1CYGK9dtw6S3XIOgvJBsNFtn4MTZ4EIq9?usp=drive_link" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="text-strategic-green hover:underline inline-flex items-center"
-        >
-          View Portfolio <ExternalLink size={16} className="ml-1" />
-        </a>
+        <div className="cta-card max-w-3xl mx-auto">
+          <h2 className="text-2xl font-bold mb-6">Portfolio:</h2>
+          <a 
+            href="https://drive.google.com/drive/folders/1CYGK9dtw6S3XIOgvJBsNFtn4MTZ4EIq9?usp=drive_link" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-strategic-green hover:underline inline-flex items-center"
+          >
+            View Portfolio <ExternalLink size={16} className="ml-1" />
+          </a>
+        </div>
       </section>
       
       <Footer />
