@@ -45,18 +45,20 @@ const PitchDecks = () => {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="bg-gray-50 py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              Pitch Deck Services
-            </h1>
-            <p className="text-xl text-gray-700">
-              Compelling presentations that get results
-            </p>
+      <AnimatedSection>
+        <section className="bg-gray-50 py-16 md:py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-3xl mx-auto text-center">
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+                Pitch Deck Services
+              </h1>
+              <p className="text-xl text-gray-700">
+                Compelling presentations that get results
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </AnimatedSection>
 
       {/* Combined Decks Section */}
       <section className="bg-white py-16">
