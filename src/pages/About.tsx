@@ -90,7 +90,7 @@ const About = () => {
               <div className="flex justify-center">
                 <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                   <Image
-                    src={getImagePath("/strategic-sakthi.jpg")}
+                    src={getImagePath("strategic-sakthi.jpg")}
                     alt="Sakthi - Strategic Growth Partner"
                     className="w-full h-96 object-cover rounded-lg"
                     placeholderClassName="w-full h-96"
@@ -116,7 +116,7 @@ const About = () => {
                         <div className="bg-white p-4 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 w-full text-center">
                           <div className="flex items-center justify-center h-16 mb-2">
                             <Image
-                              src={getImagePath(`/timeline/${index + 1}.png`)}
+                              src={getImagePath(`timeline/${index + 1}.png`)}
                               alt={item.organization}
                               className="max-w-full max-h-full object-contain"
                             />
@@ -156,7 +156,7 @@ const About = () => {
               <div className="bg-white p-8 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100">
                 <div className="mb-6">
                   <Image
-                    src={getImagePath("/mission.png")}
+                    src={getImagePath("mission.png")}
                     alt="Our Values"
                     className="w-full h-75 rounded-lg"
                     placeholderClassName="w-full h-64"

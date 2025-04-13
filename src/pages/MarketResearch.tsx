@@ -165,7 +165,7 @@ const MarketResearch = () => {
                     <div className="mb-6">
                       <Image
                         src={getImagePath(
-                          `/previous_works/${index + 1}.${work.type}`
+                          `previous_works/${index + 1}.${work.type}`
                         )}
                         alt="Market Research Analysis"
                         className="w-full h-64 rounded-lg"

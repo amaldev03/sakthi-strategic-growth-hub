@@ -197,7 +197,7 @@ const PitchDecks = () => {
                       {/* 16:9 aspect ratio */}
                       <div className="absolute inset-0 flex items-center justify-center p-4">
                         <Image
-                          src={getImagePath(`/pitch_decks/${index}.png`)}
+                          src={getImagePath(`pitch_decks/${index}.png`)}
                           alt={`Pitch Deck Sample ${index}`}
                           className="w-full h-full object-contain"
                           placeholderClassName="w-full h-full"

@@ -351,7 +351,7 @@ const ContentStrategy = () => {
                       {/* Square aspect ratio */}
                       <div className="absolute inset-0 flex items-center justify-center p-6">
                         <Image
-                          src={getImagePath(`/portfolios/${sample}.png`)}
+                          src={getImagePath(`portfolios/${sample}.png`)}
                           alt={`Portfolio Sample ${sample}`}
                           className="w-full h-full object-contain group-hover:scale-105 transition-transform duration-300"
                           placeholderClassName="w-full h-full"

@@ -8,5 +8,7 @@ export const getImagePath = (path: string): string => {
   }
 
   // In production (GitHub Pages), prepend the repository name
-  return `/sakthi-strategic-growth-hub/${cleanPath}`;
+  // Make sure we don't have double slashes
+  const basePath = "sakthi-strategic-growth-hub";
+  return `/${basePath}/${cleanPath}`.replace(/\/+/g, "/");
 };
