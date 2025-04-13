@@ -363,9 +363,11 @@ const Index = () => {
                     <div className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all duration-300 border border-gray-100 hover:border-strategic-green/20 group backdrop-blur-sm">
                       <div className="h-32 flex items-center justify-center mb-4">
                         <Image
-                          src={`/previously_worked/${
-                            brands.indexOf(brand) + 1
-                          }.${brand.type}`}
+                          src={getImagePath(
+                            `previously_worked/${brands.indexOf(brand) + 1}.${
+                              brand.type
+                            }`
+                          )}
                           alt={brand.name}
                           className="h-24 object-contain group-hover:scale-105 transition-transform duration-300"
                           placeholderClassName="h-24"
