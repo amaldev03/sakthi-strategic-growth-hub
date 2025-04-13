@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://amaldev03.github.io/sakthi-strategic-growth-hub/",
+  "homepage": "https://strategicsakthi.in/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +13,13 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
+
+$ dig strategicsakthi.in +noall +answer -t A
+> strategicsakthi.in    3600    IN A     185.199.108.153
+> strategicsakthi.in    3600    IN A     185.199.109.153
+> strategicsakthi.in    3600    IN A     185.199.110.153
+> strategicsakthi.in    3600    IN A     185.199.111.153
+
   "dependencies": {
     "@hookform/resolvers": "^3.9.0",
     "@radix-ui/react-accordion": "^1.2.0",
