@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import SectionHeader from "@/components/SectionHeader";
 import ImagePlaceholder from "@/components/ImagePlaceholder";
+import { CheckCircle } from "lucide-react";
+import { Separator } from "@/components/ui/separator";
 
 const About = () => {
   const careerTimeline = [
@@ -44,7 +46,7 @@ const About = () => {
       
       {/* Hero Section */}
       <section className="bg-strategic-dark text-white py-16 md:py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About Strategic Sakthi</h1>
           </div>
@@ -52,7 +54,7 @@ const About = () => {
       </section>
       
       {/* Profile Section */}
-      <section className="section bg-white">
+      <section className="section section-white">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
             <h2 className="text-3xl font-bold mb-4">Hi, I'm Sakthi – Your Strategic Growth Partner</h2>
@@ -74,21 +76,21 @@ const About = () => {
           <div className="flex justify-center">
             <ImagePlaceholder 
               alt="Sakthi - Strategic Growth Partner" 
-              className="w-full max-w-md h-96 rounded-lg" 
+              className="w-full max-w-md h-96 rounded-lg shadow-md" 
             />
           </div>
         </div>
       </section>
       
       {/* Career Timeline */}
-      <section className="section bg-strategic-light">
+      <section className="section section-gray">
         <SectionHeader title="Career Snapshot" />
         <div className="max-w-4xl mx-auto">
           <div className="space-y-8">
             {careerTimeline.map((item, index) => (
               <div key={index} className="grid grid-cols-1 md:grid-cols-8 gap-4">
                 <div className="md:col-span-2 flex md:justify-end">
-                  <div className="bg-white p-4 rounded-lg shadow-md w-full text-center">
+                  <div className="bg-white p-4 rounded-lg shadow-sm w-full text-center">
                     <div className="mb-2">
                       <ImagePlaceholder 
                         alt={item.organization} 
@@ -104,7 +106,7 @@ const About = () => {
                   </div>
                 </div>
                 <div className="md:col-span-5">
-                  <div className="bg-white p-6 rounded-lg shadow-md">
+                  <div className="bg-white p-6 rounded-lg shadow-sm">
                     <h3 className="text-xl font-bold mb-2">{item.title}</h3>
                     <p>{item.organization}</p>
                   </div>
@@ -116,21 +118,21 @@ const About = () => {
       </section>
       
       {/* Mission & Vision */}
-      <section className="section bg-white">
+      <section className="section section-white">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div className="bg-strategic-light p-8 rounded-lg">
+          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold mb-6">MISSION: LIGHT UP TAMIL NADU</h2>
             <div className="mb-6">
               <ImagePlaceholder 
                 alt="Mission - Light Up Tamil Nadu" 
-                className="w-full h-40" 
+                className="w-full h-40 shadow-sm" 
               />
             </div>
             <p className="text-lg">
               Taking 5 Businesses from Tamil Nadu to the global scale
             </p>
           </div>
-          <div className="bg-strategic-light p-8 rounded-lg">
+          <div className="bg-gray-100 p-8 rounded-lg shadow-sm">
             <h2 className="text-2xl font-bold mb-6">VISION</h2>
             <p className="text-lg">
               Being the bridge between Unorganized businesses and Undirected Youth to unlock potential of both in India

@@ -17,10 +17,10 @@ const CTAButton = ({
   external = false 
 }: CTAButtonProps) => {
   const baseClass = variant === "primary" 
-    ? "btn-primary" 
+    ? "bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md transition-colors font-semibold" 
     : variant === "secondary" 
-      ? "btn-secondary" 
-      : "btn-outline";
+      ? "bg-secondary text-secondary-foreground hover:bg-secondary/90 px-6 py-3 rounded-md transition-colors font-semibold" 
+      : "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground px-6 py-3 rounded-md transition-colors font-semibold";
   
   if (external) {
     return (

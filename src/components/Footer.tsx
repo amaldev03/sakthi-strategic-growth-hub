@@ -1,6 +1,6 @@
 
 import { Link } from "react-router-dom";
-import { Mail, Phone, Instagram, Linkedin, Youtube, MessageSquare } from "lucide-react";
+import { Mail, Phone, Instagram, Linkedin, Youtube, Facebook, MessageSquare } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -70,28 +70,37 @@ const Footer = () => {
                 href="https://www.instagram.com/strategicsakthi/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-strategic-green transition-colors"
+                className="hover:text-strategic-green transition-colors bg-gray-800 p-2 rounded-full"
                 aria-label="Instagram"
               >
-                <Instagram size={24} />
+                <Instagram size={20} />
               </a>
               <a 
                 href="https://www.linkedin.com/in/strategicsakthi/" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-strategic-green transition-colors"
+                className="hover:text-strategic-green transition-colors bg-gray-800 p-2 rounded-full"
                 aria-label="LinkedIn"
               >
-                <Linkedin size={24} />
+                <Linkedin size={20} />
               </a>
               <a 
                 href="https://www.youtube.com/@StrategicSakthi" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="hover:text-strategic-green transition-colors"
+                className="hover:text-strategic-green transition-colors bg-gray-800 p-2 rounded-full"
                 aria-label="YouTube"
               >
-                <Youtube size={24} />
+                <Youtube size={20} />
+              </a>
+              <a 
+                href="https://www.facebook.com/strategicsakthi/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="hover:text-strategic-green transition-colors bg-gray-800 p-2 rounded-full"
+                aria-label="Facebook"
+              >
+                <Facebook size={20} />
               </a>
             </div>
             <a 
@@ -102,16 +111,6 @@ const Footer = () => {
             >
               Book a Meeting
             </a>
-            <div className="mt-4">
-              <a 
-                href="https://linktr.ee/StrategicSakthi" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-strategic-green hover:underline"
-              >
-                LinkTree
-              </a>
-            </div>
           </div>
         </div>
         
